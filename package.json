@@ -1,0 +1,25 @@
+{
+  "name": "student_details",
+  "version": "1.0.0",
+  "description": "Technology:\r Use any.\r Database:\r MYSQL / MongoDB / (Use any)\r Below are the task requirements.\r Task\r The task is very simple. You just need to think twice and follow the below\r instruction\r 1. Create a login screen.\r 2. After logging in the student list will appear with filters(name, subject) and\r add/edit/view/delete.\r 3. While adding a student with the student and subject combination that\r already exists in the database then include the marks in existing marks.\r otherwise, it will create a new student record.\r For example, You have a current record in the database\r Name Subject Marks\r Jhon Maths 75\r If we add the same data again\r Name Subject Marks\r Jhon Maths 50\r Then the total should be 125\r 4. Student data will appear separately as per the logged-in user.\r Note :\r ● UI must be responsive.\r ● Edit form must be in the popup window.\r ● Perform edit and delete option through token-based API.\r ● Use encryption\r ● Error handling with logs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priyankapanda19/Student_Details.git"
+  },
+  "author": "Priyanka Panda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/priyankapanda19/Student_Details/issues"
+  },
+  "homepage": "https://github.com/priyankapanda19/Student_Details#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.8.0"
+  }
+}
