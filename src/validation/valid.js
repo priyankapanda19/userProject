@@ -8,9 +8,6 @@ const isValidName = (name) => {
     return /^[a-zA-Z\. ]*$/.test(name)
 }
 
-const isMark = (mark) => {
-    return /^[1-9]\d*$/.test(mark)
-};
 
 const isValidEmail = (Email) => {
     return /^([A-Za-z0-9._]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6})+$/.test(Email)
@@ -30,6 +27,6 @@ module.exports = {
     isValidEmail, 
     isValidPwd, 
     isValidName,
-    isMark,
+
     isValidObjectId
 }

@@ -1,17 +1,17 @@
 const express = require('express')
 const router = express.Router()
 const {createUser,userlogin}=require('../controller/userControler')
-const {createStudent,getStudent,deleteStudent}=require("../Controller/controller")
-const  { Authentication, Authorization }=require("../auth/authentication")
+// const {createStudent,getStudent,deleteStudent}=require("../Controller/controller")
+// const  { Authentication, Authorization }=require("../auth/authentication")
 
 
 router.post("/resistor",createUser)
 router.post('/login', userlogin)
 
 
-router.post("/addOrEdit", Authentication, Authorization ,createStudent)
-router.get("/view", Authentication, Authorization ,getStudent)
-router.delete("/delete", Authentication, Authorization ,deleteStudent)
+// router.post("/addOrEdit", Authentication, Authorization ,createStudent)
+// router.get("/view", Authentication, Authorization ,getStudent)
+// router.delete("/delete", Authentication, Authorization ,deleteStudent)
 
 
 //errorHandling for wrong address
